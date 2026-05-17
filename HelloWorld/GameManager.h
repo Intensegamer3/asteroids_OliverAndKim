@@ -1,7 +1,6 @@
 #define PLAY_IMPLEMENTATION
 #define PLAY_USING_GAMEOBJECT_MANAGER
 #define _USE_MATH_DEFINES
-#pragma once
 #include "Play.h"
 #include <cmath>
 #include <iostream>

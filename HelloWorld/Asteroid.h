@@ -1,7 +1,6 @@
-#pragma once
 #include "GameManager.h"
 
-class Asteroid : public RigidBody
+class Asteroid : RigidBody
 {
 	float scale;
 	float rotSpeed;//how many degrees it 
