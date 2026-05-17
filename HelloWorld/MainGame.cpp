@@ -1,9 +1,17 @@
+#pragma once
 #include "GameManager.h"
+RigidBody** forCalls;
 
 // The entry point for a PlayBuffer program
 void MainGameEntry( PLAY_IGNORE_COMMAND_LINE )
 {
 	Play::CreateManager( DISPLAY_WIDTH, DISPLAY_HEIGHT, DISPLAY_SCALE );
+	RigidBody* forCalls[11];
+	for (int i = 1; i < 11; i++)
+	{
+		Asteroid* newsteroid = new Asteroid();
+		forCalls[i] = new Asteroid();
+	}
 }
 
 // Called by PlayBuffer every frame (60 times a second!)
